@@ -1,7 +1,7 @@
 const pool = require("../../config/database");
 
 module.exports = {
-    getAllTeams: callback => {
+    getAllTeamService: callback => {
         pool.query(
             "SELECT * FROM `teams` WHERE `deleted` = ?",
             [
